@@ -28,12 +28,22 @@
   </url>
   
   <url>
+    <loc>/tags/not-python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/politics/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/01/01/r-can-do-anything/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
