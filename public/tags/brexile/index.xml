@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brexile on A Hugo website</title>
+    <link>/tags/brexile/</link>
+    <description>Recent content in brexile on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/brexile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>It&#39;s a new year</title>
+      <link>/2021/01/01/it-s-a-new-year/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/01/01/it-s-a-new-year/</guid>
+      <description>TL;DR - I&amp;rsquo;m in Brexile - forced to remain in Germany with family because the alternatives are far too complicated.
+ New Year 2021. Yay! 2020 was a massive dog&amp;rsquo;s breakfast of a year. 2021 starts with the completely unnecessary bullshit that is Brexit.
+The Macmillan dictionary helpfully defines a new word to classify my existence; one of Brexile. This definition does not really explain very much about the choices that have had to be made - I have been forcibly brexiled by the English government.</description>
+    </item>
+    
+  </channel>
+</rss>
