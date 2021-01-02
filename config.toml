@@ -1,45 +1,64 @@
 baseurl = "/"
+title = "@sagrudd"
+theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
-title = "A Hugo website"
-theme = "hugo-lithium"
-googleAnalytics = ""
+# Enable comments by entering your Disqus shortname
 disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
-[permalinks]
-    post = "/:year/:month/:day/:slug/"
-
-[[menu.main]]
-    name = "1. Home"
-    url = "/"
-[[menu.main]]
-    name = "2. About"
-    url = "/about/"
-[[menu.main]]
-    name = "3. GitHub"
-    url = "https://github.com/sagrudd"
-[[menu.main]]
-    name = "4. Twitter"
-    url = "https://twitter.com/sagrudd"
-
 [params]
-    description = "A website built using Hugo and blogdown."
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "@sagrudd - musings, thoughts and projects"
+  copyright = "&copy;2021 Stephen Rudd"
+  sidebarAbout = [
+    "Product manager, brexiled bioinformatician and tech geek. Looking to play with the best toys and to share some experiences"
+  ]
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+  email = "stephen@mnemosyne.co.uk"
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+    # Optional Matomo analytics (formerly piwik)
+      # [params.analytics.matomo]
+      #  URL = "https://stats.example.com"
+      #  ID = "42"
+      #  # Track all subdomains with "*.example.com" (Optional)
+      #  domain = "www.example.com"
+      #  # Optional integrity check hash
+      #  hash = ""
 
-    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Home"
+  url = "portfolio/"
+  home = true
 
-    # path to the favicon, under "static"
-    favicon = "favicon.icox"
+  [[params.navlinks]]
+  name = "About"
+  url = "about/"
+  
+  [[params.navlinks]]
+  name = "Blog"
+  url = "blog/"
 
-    [params.logo]
-    url = "ninja1.png"
-    width = 50
-    height = 50
-    alt = "Logo"
-
+  [params.social]
+  email         = "stephen@mnemosyne.co.uk"
+  twitter       = "https://twitter.com/sagrudd"
+  linkedin      = "full profile url in linkedin"
+#  stackoverflow = "full profile url in stackoverflow"
+  instagram     = "https://www.instagram.com/sagrudd/"
+  github        = "https://github.com/sagrudd/"
+  youtube       = "https://www.youtube.com/channel/UC6zL408ceMkzrPWa7hYZuXA"
