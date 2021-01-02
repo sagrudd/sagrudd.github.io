@@ -19,10 +19,11 @@ msg "Pulling down the \`master\` branch into \`public\` to help avoid merge conf
 git subtree pull --prefix=public https://github.com/$USERNAME/$USERNAME.github.io.git origin master -m "Merge origin master"
 msg "Building the website"
 hugo
+sleep 5s
 msg "Pushing the updated \`public\` folder to the \`$SOURCE\` branch"
 git add public
 git commit -m "$MESSAGE"
-git push origin "$SOURCE"
+git push "$SOURCE"
 msg "Pushing the updated \`public\` folder to the \`master\` branch"
 git subtree push --prefix=public https://github.com/$USERNAME/$USERNAME.github.io.git master
 

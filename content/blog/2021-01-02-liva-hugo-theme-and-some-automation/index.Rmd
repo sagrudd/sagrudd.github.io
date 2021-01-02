@@ -11,6 +11,7 @@ type: post
 ---
 
 
+```
+blogdown::new_site(theme="gethugothemes/liva-hugo")
 
-<pre><code>blogdown::new_site(theme=&quot;gethugothemes/liva-hugo&quot;)
-</code></pre>
+```
