@@ -6,6 +6,7 @@ slug: r-can-do-anything
 categories: []
 tags:
   - not-python
+type: post
 ---
 
 Post number two! Exciting!

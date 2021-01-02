@@ -1,10 +1,11 @@
 ---
-date: "2021-01-01"
-title: About
+date: "2019-10-29T13:49:23+06:00"
+description: this is meta description
+draft: false
+image: images/author.jpg
+title: About Me
+type: about
 ---
 
-
-This website has been prepared using the 
-[**blogdown**](https://github.com/rstudio/blogdown) package. This shows that
-[R](https://www.r-project.org/) can do anything (that Python can). This is a
-bit of a vanity exercise ... but why not?
+Brexiled Bioinformatician and Product Manager. Interested in bringing applied
+computational workflows to bench-biologists.

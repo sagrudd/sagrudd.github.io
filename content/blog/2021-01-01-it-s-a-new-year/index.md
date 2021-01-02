@@ -8,6 +8,7 @@ tags:
   - brexile
   - politics
   - frustration
+type: post
 ---
 
 TL;DR - I'm in `Brexile` - forced to remain in Germany with family because the

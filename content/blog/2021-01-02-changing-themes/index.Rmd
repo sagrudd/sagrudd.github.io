@@ -7,9 +7,9 @@ categories:
   - blogdown
 tags:
   - blogdown
-image: 'portfolio/old_r_webgraphic.png'
+image: 'images/old_r_webgraphic.png'
 showonlyimage: false
-type: "post"
+type: post
 ---
 
 Yesterday's first excursion into the `blogdown` universe helped prepare some
@@ -19,7 +19,6 @@ and although perhaps a little dated it contained a couple of technical gems that
 are super-relevant to getting an R-based blog presented via `github` using
 `blogdown`.
 
-<!--more-->
 
 What has actually changed?
 
