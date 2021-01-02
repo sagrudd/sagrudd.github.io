@@ -13,5 +13,4 @@ type: post
 
 ```
 blogdown::new_site(theme="gethugothemes/liva-hugo")
-
 ```
