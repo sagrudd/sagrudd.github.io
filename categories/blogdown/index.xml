@@ -16,5 +16,14 @@
       <description>Yesterday’s first excursion into the blogdown universe helped prepare some basic content with the default hugo-lithium theme.</description>
     </item>
     
+    <item>
+      <title>liva-hugo theme and some automation</title>
+      <link>/blog/2021-01-02-liva-hugo-theme-and-some-automation/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021-01-02-liva-hugo-theme-and-some-automation/</guid>
+      <description> blogdown::new_site(theme=&amp;quot;gethugothemes/liva-hugo&amp;quot;)  </description>
+    </item>
+    
   </channel>
 </rss>
