@@ -6,23 +6,23 @@
     <description>Recent content in blogdown on @sagrudd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>changing themes</title>
-      <link>/blog/2021-01-02-changing-themes/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2021-01-02-changing-themes/</guid>
-      <description>Yesterday’s first excursion into the blogdown universe helped prepare some basic content with the default hugo-lithium theme.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 02 Jan 2021 13:43:40 +0000</lastBuildDate><atom:link href="/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>liva-hugo theme and some automation</title>
       <link>/blog/2021-01-02-liva-hugo-theme-and-some-automation/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Jan 2021 13:43:40 +0000</pubDate>
       
       <guid>/blog/2021-01-02-liva-hugo-theme-and-some-automation/</guid>
       <description>In the previous post I introduced a quick exploration into the theme identified as hugo-creative-portfolio-theme.</description>
+    </item>
+    
+    <item>
+      <title>changing themes</title>
+      <link>/blog/2021-01-02-changing-themes/</link>
+      <pubDate>Sat, 02 Jan 2021 10:43:40 +0000</pubDate>
+      
+      <guid>/blog/2021-01-02-changing-themes/</guid>
+      <description>Yesterday’s first excursion into the blogdown universe helped prepare some basic content with the default hugo-lithium theme.</description>
     </item>
     
   </channel>
