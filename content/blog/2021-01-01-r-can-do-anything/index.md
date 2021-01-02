@@ -1,7 +1,7 @@
 ---
 title: R can do anything
 author: sagrudd
-date: '2021-01-01'
+date: '2021-01-01T20:43:40'
 slug: r-can-do-anything
 categories: []
 tags:
