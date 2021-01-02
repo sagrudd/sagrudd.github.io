@@ -23,7 +23,7 @@ sleep 5s
 msg "Pushing the updated \`public\` folder to the \`$SOURCE\` branch"
 git add public
 git commit -m "$MESSAGE"
-git push "$SOURCE"
+git push
 msg "Pushing the updated \`public\` folder to the \`master\` branch"
 git subtree push --prefix public https://github.com/$USERNAME/$USERNAME.github.io.git master
 
