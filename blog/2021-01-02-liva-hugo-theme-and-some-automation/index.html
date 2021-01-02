@@ -140,7 +140,66 @@
           
 
 
+<p>In the previous post I introduced a quick exploration into the theme identified
+as <code>hugo-creative-portfolio-theme</code>. This added some figures and some great new
+understanding as to how <code>hugo</code> works - I have now gone one step further and have
+again a new favourite <code>hugo</code> theme. The canonical theme can be
+<a href="https://themes.gohugo.io/liva-hugo/">browsed here</a> - installing into <code>blogdown</code>
+is as simple as … (yes - I started with a clean install to vanish some of the
+fluff from the last couple of days).</p>
 <pre><code>blogdown::new_site(theme=&quot;gethugothemes/liva-hugo&quot;)</code></pre>
+<p>I repopulated the couple of posts prepared yesterday and we have shuffled around
+the location for the figures that have been included. Some modification of the
+<code>html</code> code included in the theme has been performed to sharpen the pages and to
+make them a little more to my liking.</p>
+<p>One of the major differences for the <code>liva-hugo</code> theme is that in addition to
+the ‘normal’ blog posts there is a concept of <code>type: "featured"</code> so that some
+posts can be pinned to the landing page - w00t! This feature will require a bit
+of moderation but is useful for highlighting some of the more salient content.
+I am also feeling that the concept of post categorisation is going to be super-
+useful over the coming posts!</p>
+<p>For these webpages I chose the useful
+<a href="https://sagrudd.github.io">sagrudd.github.io</a> URL. This is hosted as a <code>GitHub Pages</code> site - this provides rather limited opportunities in how the site code
+and the presentation content are separated</p>
+<p><img src="/images/post_content/GitHubPagesScreenshot.png" /></p>
+<p>In <a href="https://amber.rbind.io/2016/12/19/website/#adding-a-blog-post-or-portfolio-piece">Amber Thomas</a>
+post, she introduces a solution where the code side of the webpage is placed in
+one GitHub branch (canonically called <code>hugo</code>) whilst the content rendered by the
+<em>hugo</em> software is stored in the <code>master</code> branch. The <code>master</code> and <code>hugo</code>
+branches are then linked using <code>git subtree</code> functionality. This seems
+sufficient for my purposes …</p>
+<p>Amber introduces a couple of trivial scripts to shepherd the data in the right
+directions; her examples were a couple of years old and not quite contemporary -
+I have taken the liberty to update the code to work for me.</p>
+<pre class="bash"><code>#!/usr/bin/env bash
+# This script allows you to easily and quickly generate and deploy your website
+# using Hugo to your personal GitHub Pages repository. This script requires a
+# certain configuration, run the `setup.sh` script to configure this. See
+# https://hjdskes.github.io/blog/deploying-hugo-on-personal-github-pages/index.html
+# for more information.
+# Set the English locale for the `date` command.
+export LC_TIME=en_US.UTF-8
+# GitHub username.
+USERNAME=sagrudd
+# Name of the branch containing the Hugo source files.
+SOURCE=hugo
+# The commit message.
+MESSAGE=&quot;Site rebuild $(date)&quot;
+msg() {
+    printf &quot;\033[1;32m :: %s\n\033[0m&quot; &quot;$1&quot;
+}
+msg &quot;Pulling down the \`master\` branch into \`public\` to help avoid merge conflicts&quot;
+git subtree pull --prefix public https://github.com/$USERNAME/$USERNAME.github.io.git master -m &quot;Merge origin master&quot;
+msg &quot;Building the website&quot;
+hugo
+sleep 5s
+msg &quot;Pushing the updated \`public\` folder to the \`$SOURCE\` branch&quot;
+git add public
+git commit -m &quot;$MESSAGE&quot;
+git push
+msg &quot;Pushing the updated \`public\` folder to the \`master\` branch&quot;
+git subtree push --prefix public https://github.com/$USERNAME/$USERNAME.github.io.git master</code></pre>
+<p>It’s a bit of a hack, but if you are reading this post - it seems to work!</p>
 
         </div>
 
