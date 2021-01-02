@@ -22,7 +22,7 @@
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/2021-01-02-liva-hugo-theme-and-some-automation/</guid>
-      <description> blogdown::new_site(theme=&amp;quot;gethugothemes/liva-hugo&amp;quot;)  </description>
+      <description> blogdown::new_site(theme=&amp;quot;gethugothemes/liva-hugo&amp;quot;) </description>
     </item>
     
   </channel>
