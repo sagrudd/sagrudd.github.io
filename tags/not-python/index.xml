@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>not-python on @sagrudd</title>
+    <link>/tags/not-python/</link>
+    <description>Recent content in not-python on @sagrudd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/not-python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R can do anything</title>
+      <link>/blog/r-can-do-anything/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/r-can-do-anything/</guid>
+      <description>&lt;p&gt;Post number two! Exciting!&lt;/p&gt;
+&lt;p&gt;There has been a selection pressure to do stuff in &lt;code&gt;Python&lt;/code&gt;. Python is the
+corporate language of choice; everyone else uses Python. Python even makes
+cups of tea. Using R is a heresy.&lt;/p&gt;
+&lt;p&gt;I have started re-invigorating some of my earlier R-projects that have since
+been migrated into Python. During the strange COVID-esque end-of-2020 this has
+been a source of pleasure. I had the desire to learn some of the
+&lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;strong&gt;Tidyverse&lt;/strong&gt;&lt;/a&gt; tricks and tools - it&amp;rsquo;s wonderful!
+The project that was formerly called
+&lt;a href=&#34;https://github.com/sagrudd/nanopoRe&#34;&gt;&lt;strong&gt;&lt;code&gt;nanopoRe&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; is currently being
+reinvented as &lt;a href=&#34;https://github.com/sagrudd/floundeR&#34;&gt;&lt;strong&gt;&lt;code&gt;floundeR&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; and I am
+again finding that R is a pleasure.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
