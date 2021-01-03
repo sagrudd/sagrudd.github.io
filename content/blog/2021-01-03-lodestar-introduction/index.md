@@ -9,12 +9,21 @@ tags:
   - lodestar
 image: 'images/satellite.png'
 showonlyimage: false
-type: post
+type: featured
 ---
 
-One of the highlights of my academic career was a simple comparative genomics platform called initially Sputnik and later openSputnik. The software was used to massage a collection of Sanger-based cDNA sequences through a computational pipeline to prepare unigenes and to annotate these unigenes for the preparation of summary statistics, reports and to facilitate comparative genomics in the absence of a complete genome sequence.
+One of the highlights of my academic career was a simple comparative genomics 
+platform called initially Sputnik and later openSputnik. The software was used 
+to massage a collection of Sanger-based cDNA sequences through a computational 
+pipeline to prepare unigenes and to annotate these unigenes for the preparation 
+of summary statistics, reports and to facilitate comparative genomics in the 
+absence of a complete genome sequence.
 
-The openSputnik software died when I moved into the pharmaceutical industry in 2006 when I was actively discouraged from continuing my academic pursuits. I am not aware of copies of the software being available anywhere - it would I suspect be rather embarrassing to see the code that was hacked together to facilitate publications rather than support…
+The openSputnik software died when I moved into the pharmaceutical industry in 
+2006 and was actively discouraged from continuing my academic pursuits. I am not
+aware of copies of the software being available anywhere - it would I suspect be
+rather embarrassing to see the code that was hacked together to facilitate 
+publications rather than support…
 
 In the desire to be a little more active in my coding ambitions I have made the
 decision to bring the project back to life but from a third-generation DNA
