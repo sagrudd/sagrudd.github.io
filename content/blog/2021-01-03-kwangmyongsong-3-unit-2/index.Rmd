@@ -10,7 +10,7 @@ tags:
   - R
   - gwangmyeongseong3
 image: images/post_content/nk-dprk-satellites20132.png
-type: featured
+type: post
 ---
 
 One of the highlights of my academic career was a simple comparative genomics
