@@ -1,5 +1,5 @@
 ---
-title: Lodestar introduction
+title: Kwangmyŏngsŏng-3; redux from an earlier comparative genomics toolbox
 author: sagrudd
 date: '2021-01-03'
 slug: []
