@@ -6,7 +6,16 @@
     <description>Recent content on @sagrudd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jan 2021 13:43:40 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>an openSputnik redux - (korean) lodestar</title>
+      <link>/blog/2021-01-03-an-opensputnik-redux-korean-lodestar/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021-01-03-an-opensputnik-redux-korean-lodestar/</guid>
+      <description>This is a new post …</description>
+    </item>
+    
     <item>
       <title>liva-hugo theme and some automation</title>
       <link>/blog/2021-01-02-liva-hugo-theme-and-some-automation/</link>
