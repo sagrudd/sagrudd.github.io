@@ -9,8 +9,9 @@ categories:
 tags:
   - R
   - gwangmyeongseong3
-image: images/post_content/satellite.png
-type: post
+image: '/images/satellite.png'
+showonlyimage: false
+type: 'post'
 ---
 
 One of the highlights of my academic career was a simple comparative genomics
