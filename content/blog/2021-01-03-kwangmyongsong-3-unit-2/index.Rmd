@@ -9,8 +9,6 @@ categories:
 tags:
   - R
   - gwangmyeongseong3
-image: '/images/satellite.png'
-showonlyimage: false
 type: 'post'
 ---
 
