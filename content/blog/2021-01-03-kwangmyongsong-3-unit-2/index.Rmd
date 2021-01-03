@@ -1,5 +1,5 @@
 ---
-title: Kwangmyŏngsŏng-3 Unit 2
+title: Kwangmyongsong-3 Unit 2
 author: sagrudd
 date: '2021-01-03'
 slug: []
