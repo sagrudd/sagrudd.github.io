@@ -7,6 +7,9 @@ categories:
   - lodestar
 tags:
   - lodestar
+image: 'images/satellite.png'
+showonlyimage: false
+type: post
 ---
 
 This is an introduction to the lodestar project.
