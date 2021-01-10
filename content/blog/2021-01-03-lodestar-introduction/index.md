@@ -9,7 +9,7 @@ tags:
   - lodestar
 image: 'images/satellite.png'
 showonlyimage: false
-type: featured
+type: post
 ---
 
 One of the highlights of my academic career was a simple comparative genomics 
