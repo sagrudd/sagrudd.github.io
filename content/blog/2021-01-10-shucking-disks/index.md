@@ -43,7 +43,7 @@ external cases and extracted the four 6TB disks. They are consumer grade
 `compute` disks by Seagate - good enough for a side-project. Let's see how well
 they last!
 
-![](images/post_content/shucked_disks.jpg)
+![](/images/post_content/shucked_disks.jpg)
 
 The image above shows the four disks ready for squeezing into caddies for their
 future occupancy of the RS816 NAS. The process of shucking was trivial. I am
@@ -57,8 +57,10 @@ So how are the drives being setup? While a 24 (give or take) RAID-0 drive would
 be magnificent; I have lost more than enough drives in my computing career -
 a simple RAID-5 is good enough for me!
 
-![](images/post_content/you_have_been_warned.png)
+![](/images/post_content/you_have_been_warned.png)
 
 Synology is clearly a little concerned for my sanity - I have been warned.
 
-![](images/post_content/you_have_been_warned.png)
+We'll be seeing more from this project in the future - we'll have some NFS
+mounts from this server - I'll keep you posted.
+
