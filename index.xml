@@ -6,7 +6,16 @@
     <description>Recent content on @sagrudd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LinksThatMakeLifeSimpler</title>
+      <link>/blog/2021-01-23-linksthatmakelifesimpler/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021-01-23-linksthatmakelifesimpler/</guid>
+      <description>local network locations  FreeNAS :: R720XD pi-hole RstudioServer :: ubuntu RstudioServer :: fedora Synology :: RS816 Ubiquiti :: DMP Xen Orchestra  </description>
+    </item>
+    
     <item>
       <title>shucking disks</title>
       <link>/blog/2021-01-10-shucking-disks/</link>
