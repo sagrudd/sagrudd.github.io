@@ -141,8 +141,7 @@ blog post.</p>
 <ul>
 <li>The first task is to use the <code>Addins</code> dialog in RStudio to create a new post.</li>
 </ul>
-<p><img src="images/ScreenShot2021-01-23.png" alt=""></p>
-<!-- raw HTML omitted -->
+<img src="images/ScreenShot2021-01-23.png" width=75% height=75%>
 <p>We the hack at the <code>Rmd</code> (or <code>md</code>) template for a bit, share words of wisdom and
 thoughts. Proof-read, commit and push. Then finally - using a <code>Terminal</code> tab
 or window just run the script</p>
@@ -154,6 +153,22 @@ that should have been included above doesn&rsquo;t show - <em>macOS</em> standar
 nomenclature with lots of spaces &hellip; The easiest fix here is hopefully just to
 rename the file from <code>Screen Shot 2021-01-23 at 4.43.02 pm.png</code> to
 <code>ScreenShot2021-01-23.png</code>.</p>
+<p>Nextly, the image included appears <strong>MASSIVE</strong>. There are some ways to deal with
+this; this could involve rescaling the image using e.g. <code>ImageMagick</code> but
+just scaling the image for display would be preferable. There are a load of
+comments and discussions that using the HTML <code>&lt;img src&gt; ...</code> would be the way
+to go. This however seems to lead to a <code>&lt;!-- raw HTML omitted --&gt;</code> being placed
+in the rendered HTML page.</p>
+<p>Curious indeed. This is apparently something curious to do with HUGO; the
+rendering software deep behind this <code>blogdown</code> software. The solution here was
+as simple as enabling unsafe HTML - this can be achieved by pasting the
+following lines into the <code>config.toml</code> file that defines this site.</p>
+<pre><code>[markup.goldmark.renderer]
+  unsafe = true
+</code></pre><p>To finish off let&rsquo;s replace our canonical <code>![](images/ScreenShot2021-01-23.png)</code>
+with the scaled
+<code>&lt;img src=&quot;images/ScreenShot2021-01-23.png&quot; width=75% height=75%&gt;</code> and we&rsquo;re
+done!</p>
 
         </div>
 
