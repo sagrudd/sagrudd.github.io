@@ -113,11 +113,6 @@ expire_days = 10
 
 
 ############################# social site ########################
-#[[params.social]]
-#title = "facebook"
-#icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-#link = "#"
-
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
@@ -136,4 +131,4 @@ link = "https://github.com/sagrudd/"
 [[params.social]]
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "https://linkedin.com"
+link = "https://www.linkedin.com/in/stephen-rudd-27650a1/"
