@@ -17,6 +17,8 @@ blog post.
 
 ![](images/ScreenShot2021-01-23.png)
 
+<img src="images/ScreenShot2021-01-23.png" width=50% height=50%>
+
 We the hack at the `Rmd` (or `md`) template for a bit, share words of wisdom and
 thoughts. Proof-read, commit and push. Then finally - using a `Terminal` tab
 or window just run the script
