@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>@sagrudd</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="sagrudd">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="/"><img class="img-fluid"
+          src="/images/logo.png" alt="@sagrudd"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/sagrudd"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/sagrudd/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/sagrudd/"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/stephen-rudd-27650a1/"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="/"><img class="img-fluid"
+            src="/images/logo.png" alt="@sagrudd"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/raspberrypi"
+          class="text-primary">Raspberry pi</a>
+        
+        <h2>RaspberryPi and NFS mounted home</h2>
+        <div class="mb-3 post-meta">
+          <span>By sagrudd</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>24 January 2021</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h5 id="preamble">Preamble</h5>
+<p>One of the reasons for the dearth of intended posts in January has been an
+exercise in trying to demonstrate that the RaspberryPi can actually do
+bioinformatics. We&rsquo;ll have a look at
+<a href="https://sagrudd.github.io/symbioinfo/">symbioinfo</a> in an upcoming blogpost -
+this could be a justification for genomics analyses on a humble RaspberryPi.</p>
+<p>As I have gained experience in getting software to compile on the RaspberryPi
+I have tried to boost performance by running more than one Pi at the same time.
+This is a satisfactory solution but using <code>git pull</code> and <code>git push</code> to
+synchronise data between devices that are but a few centimeters apart seems
+counter intuitive.</p>
+<p>What I would appreciate would be a shared home filesystem across these computers
+and I guess while we&rsquo;re doing that there are a few other computers that might
+also benefit from this? The mission for this snowy Sunday afternoon is therefore
+to establish a shared home filesystem across initially just a couple of Pi and
+do document this a brief blogpost.</p>
+<h5 id="ldap">LDAP</h5>
+<p>LDAP (Lightweight Directory Access Protocol) is an open and cross platform
+protocol used for directory services authentication. LDAP is often used to
+provide a central service for the storage of usernames and passwords. The first
+step in this afternoon&rsquo;s mission is thus to establish an LDAP server on the
+home network.</p>
+<p>Earlier we looked at a
+<a href="https://sagrudd.github.io/blog/2021-01-10-shucking-disks/">disk update</a> on a
+largely unused Synology server. Synology provide their own implementation of
+an LDAP server - we&rsquo;ll use this RS816 device to share both LDAP and NFS for this
+exercise.</p>
+<img src="images/210124-SynologyLDAP.png" alt="Synology LDAP" width="75%" height="75%"/>
+<p>Creating an LDAP server really is as simple as entering an <code>FQDN</code> and a password
+and creating a user. I have created a user called <code>dummy</code> with an equally
+nonsensical password that we&rsquo;ll use to demonstrate proof-of-concept. While you
+are logged into the Synology device also ensure that home directories are
+created for the LDAP users.</p>
+<img src="images/210124-SynologyLDAPHome.png" alt="" width="75%" height="75%"/>
+<p>It is also probably worth having a quick check here that the LDAP server is
+actually spitting out the expected content</p>
+<pre><code>ldapsearch -x -LLL -h 192.168.1.119 \
+    -D &quot;uid=root,cn=users,dc=mnemosyne,dc=co,dc=uk&quot; \
+    -w topsecret
+</code></pre><h5 id="disable-selinux">disable SELinux</h5>
+<p>I am not sure that I really understand or have the patience to get to grips
+with SELinux. I am going to disable it &hellip;</p>
+<pre><code>sudo vim /etc/sysconfig/selinux
+</code></pre><h5 id="fedora-and-authenticating-against-ldap">Fedora and authenticating against LDAP.</h5>
+<p>For this afternoon&rsquo;s play we have a clean install of <code>Fedora 33</code> on a RaspPi
+that has been assigned an IP address of <code>192.168.1.235</code>.</p>
+<p>Let&rsquo;s update the system and install a couple of LDAP client pacakges</p>
+<pre><code>sudo yum update
+sudo yum install openldap-clients \
+    sssd-ldap \
+    sssd-tools \
+    oddjob-mkhomedir \
+    authselect
+</code></pre><p>The next step is to define our LDAP server. Using our preferred editor we would
+like to edit the file <code>/etc/openldap/ldap.conf</code> to include the <code>BASE</code> and <code>URI</code>
+for our LDAP server - I&rsquo;ll use the vim editor here and include the two lines
+as shown below.</p>
+<pre><code>sudo vim /etc/openldap/ldap.conf
+
+BASE    dc=mnemosyne,dc=co,dc=uk
+URI     ldap://ldap.mnemosyne.co.uk
+</code></pre><p>It is <strong>CRITICAL</strong> to note here that LDAP only consumes URI with FQDN - an IP
+address will not cut the mustard. I am not running a DNS at home so for things
+to work intelligently (rather than throwing assorted errors) we should add an
+entry to our <code>/etc/hosts</code> file to identify the LDAP server</p>
+<pre><code>echo &quot;192.168.1.119 ldap ldap.mnemosyne.co.uk&quot; | \
+    sudo tee -a /etc/hosts
+</code></pre><p>And now for the most important file - <code>/etc/sssd/sssd.conf</code> - let&rsquo;s open this
+up using <code>vim</code> (or equivalent) and add the following lines</p>
+<pre><code>[sssd]
+config_file_version = 2
+services = nss, pam
+domains = default
+
+[nss]
+
+[pam]
+
+[domain/default]
+ldap_schema = rfc2307bis
+ldap_id_use_start_tls = False
+cache_credentials = False
+ldap_search_base = dc=mnemosyne,dc=co,dc=uk
+id_provider = ldap
+auth_provider = ldap
+chpass_provider = ldap
+access_provider = ldap
+sudo_provider = ldap
+ldap_uri = ldap://ldap.mnemosyne.co.uk
+ldap_default_bind_dn = uid=root,cn=users,dc=mnemosyne,dc=co,dc=uk
+ldap_default_authtok = topsecret
+ldap_search_timeout = 50
+ldap_network_timeout = 60
+ldap_access_order = filter
+ldap_access_filter = (objectClass=posixAccount) 
+override_shell = /bin/bash
+ldap_auth_disable_tls_never_use_in_production = True
+
+</code></pre><p>We are almost done for part 1.</p>
+<h5 id="autocreate-home-directories">autocreate home directories</h5>
+<p>When a user defined in the LDAP database logs into a given computer for the
+first time it is likely that the <code>/home/&lt;user&gt;/</code> directory has not been
+created. The command below adds a line to the <code>/etc/pam.d/system-auth</code> file
+that instructs a home directory to be created if it does not already exist!</p>
+<pre><code>echo &quot;session optional pam_oddjob_mkhomedir.so skel=/etc/skel/ umask=0022&quot; | \
+    sudo tee -a /etc/pam.d/system-auth
+</code></pre><p>Now let&rsquo;s start the associated system service (and ensure that it is kept
+enabled at system boot)</p>
+<pre><code>sudo systemctl start oddjobd
+sudo systemctl enable oddjobd
+</code></pre><h5 id="double-check-our-settings-and-test-our-ldap-connection-">double-check our settings and test our LDAP connection &hellip;</h5>
+<p>We have done a load of cut-and-paste here and have transposed some of my
+thoughts and settings into something that hopefully works for a shiny new
+computer system &hellip; Let&rsquo;s now make sure that it all works!</p>
+<p><code>sssctl config-check</code> is a program that performs some sanity checking on the
+<code>sssd</code> configuration files. Give this a quick run and watch the error (the files
+that we have created have the wrong permissions so a quick fix is required)</p>
+<pre><code>sudo sssctl config-check
+File ownership and permissions check failed. Expected root:root and 0600.
+sudo chmod 600 -R /etc/sssd/sssd.conf
+</code></pre><p>and we can now start the system with the new configuration</p>
+<pre><code>sudo systemctl restart sssd
+sudo systemctl enable sssd
+</code></pre><p>We can now check to see if we can discover our <code>&lt;dummy&gt;</code> user and can test the
+logon (and home directory creation) of our RaspberryPi.</p>
+<pre><code>$ id dummy
+uid=1000001(dummy) gid=1000001(users) groups=1000001(users)
+</code></pre><p>Looking great! We have connected to the LDAP server on the Synology device and
+have identified the <code>&lt;dummy&gt;</code> user. Furthermore our LDAP user can now logon to
+the system and the <code>$home</code> directory is available and ready to go.</p>
+<h5 id="whats-next">What&rsquo;s next?</h5>
+<p>This Sunday afternoon project didn&rsquo;t quite go as far as I had hoped - it has
+been several years (2016 was the last time) that I performed such a workflow
+and my memory and lack of coherent notes made for slower than expected progress.
+I see three obvious follow on blogposts to cover further RaspberryPi LDAP
+mischief</p>
+<ul>
+<li>Automounting an LDAP home directory (we have created the directory here; but no
+content is shared)</li>
+<li>LDAP users and sudo rights using a Fedora / Synology combo</li>
+<li>Securing LDAP traffic on a self-signed Synology server (the current setup uses
+the <code>ldap_auth_disable_tls_never_use_in_production</code> flag)</li>
+</ul>
+<p>Watch this space; and I&rsquo;ll include these updates.</p>
+<h5 id="references-and-links">References and links</h5>
+<ul>
+<li><a href="https://www.server-world.info/en/note?os=Fedora_31&amp;p=openldap&amp;f=3">Fedora 31 LDAP client</a></li>
+<li><a href="https://www.synology.com/en-global/knowledgebase/DSM/tutorial/Management/How_to_join_Mac_Linux_client_computers_to_LDAP_Server#t3">Synology LDAP and exported home</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+
+               
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="tel:available%20on%20request"><i
+                class="ti-mobile mr-3 text-primary"></i>available on request</a></li>
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Dingelstedt, Germany</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:stephen@mnemosyne.co.uk"><i
+                class="ti-email mr-3 text-primary"></i>stephen@mnemosyne.co.uk</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/sagrudd">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/sagrudd/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/sagrudd/">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/stephen-rudd-27650a1/">linkedin</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/blogdown">Blogdown</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/hardware">Hardware</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/lodestar">Lodestar</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/raspberrypi">Raspberrypi</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2021 @sagrudd |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/plugins/slick/slick.min.js"></script>
+
+<script src="/plugins/venobox/venobox.min.js"></script>
+
+<script src="/plugins/search/fuse.min.js"></script>
+
+<script src="/plugins/search/mark.js"></script>
+
+<script src="/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+
+
+
+</body>
+</html>

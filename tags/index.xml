@@ -6,7 +6,34 @@
     <description>Recent content in Tags on @sagrudd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LDAP</title>
+      <link>/tags/ldap/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ldap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi</title>
+      <link>/tags/raspberrypi/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/raspberrypi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogdown</title>
+      <link>/tags/blogdown/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hardware</title>
       <link>/tags/hardware/</link>
@@ -22,15 +49,6 @@
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/lodestar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blogdown</title>
-      <link>/tags/blogdown/</link>
-      <pubDate>Sat, 02 Jan 2021 13:43:40 +0000</pubDate>
-      
-      <guid>/tags/blogdown/</guid>
       <description></description>
     </item>
     
