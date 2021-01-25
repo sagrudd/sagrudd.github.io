@@ -3,8 +3,8 @@ title: Blog-post-cheatsheet
 author: sagrudd
 date: '2021-01-23'
 slug: []
-categories: []
-tags: []
+categories: [blogdown]
+tags: [blogdown]
 ---
 
 It is now two weeks since the last post - not a good start to the plan to be a
