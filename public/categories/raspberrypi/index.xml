@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RaspberryPi on @sagrudd</title>
+    <link>/categories/raspberrypi/</link>
+    <description>Recent content in RaspberryPi on @sagrudd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RaspberryPi and NFS mounted home</title>
+      <link>/blog/2021-01-24-raspberrypi-and-nfs-mounted-home/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2021-01-24-raspberrypi-and-nfs-mounted-home/</guid>
+      <description>Preamble One of the reasons for the dearth of intended posts in January has been an exercise in trying to demonstrate that the RaspberryPi can actually do bioinformatics.</description>
+    </item>
+    
+  </channel>
+</rss>
